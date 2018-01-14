@@ -28,10 +28,10 @@
              	
              
 	      	    <ul class="nav navbar-nav navbar-right">
-	      	    	<li class="active"><a href="#" ><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-	      	    	<li><a href="#"><span class="glyphicon glyphicon-list"></span> 咨询</a></li>
-	      	    	<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
-	      	    	<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+	      	    	<li class="active"><a href="index.html" ><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+	      	    	<li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+	      	    	<li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+	      	    	<li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
 	      	    </ul>
 
       	    </div>
@@ -149,11 +149,47 @@
         
 	</div>
 </div>
-   
-   <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>
-      <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>
 
-   <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>  <p>1</p>
+<div class="tab2">
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="text col-md-6 col-sm-6  tab2-text" >
+				<h3>强大的学习体系</h3>
+				<p>经过管理学大师层层把关、让您的企业突飞猛进。</p>
+			</div>
+			<div class="col-md-6 col-sm-6 tab2-img" >
+				
+				<img src="img/tab2.png" class="img-responsive center-block" alt="">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<div class="tab3">
+	<div class="container">
+		<div class="col-md-6 col-sm-6">
+			<img src="img/tab3.png" class="img-responsive center-block" alt="">
+		</div>
+		<div class=" text col-md-6 col-sm-6">
+			<h3>完美的管理方式</h3>
+			<p>最新的管理培训方案，让您的企业赶超同行。</p>
+		</div>
+	</div>
+</div>
+
+<footer id="footer">
+	
+	<div class="container">
+		<p>企业培训 | 合作事宜 | 版权投诉</p>
+		<p>苏ICP 备12345678. © 2009-2016 瓢城企训网. Powered by Bootstrap.</p>
+	</div>
+</footer>
 
 
 	<script src="js/jquery.min.js"></script>
@@ -174,6 +210,24 @@
                        $('.carousel-control').css('line-height',$height+'px');
                  });
                 */
+
+
+$(window).load(function(){
+
+$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+
+});
+
+
+$(window).resize(function () {
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+	
+
+	$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	$(window).resize(function () {
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
 		});
 	</script>
 </body>
